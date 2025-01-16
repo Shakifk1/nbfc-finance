@@ -1,0 +1,72 @@
+import React from 'react';
+import image1 from '../assets/image1.jpg';
+
+const MicrofinanceFeatures = () => {
+  return (
+    <section className="bg-gray-100 py-12 px-6">
+      {/* Key Features Section */}
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-blue-700 mb-8">
+          Key Features of Microfinance:
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
+          {/* Left-side Image */}
+          <img
+            src={image1}
+            alt="Microfinance"
+            className="w-full lg:w-1/2 mb-6 lg:mb-0 rounded-md shadow-md"
+          />
+
+          {/* Right-side Text */}
+          <ul className="lg:w-1/2 space-y-4 text-gray-700">
+            <li>
+              <span className="font-semibold text-blue-700">Microloans:</span> Small, short-term loans, often without the need for collateral.
+            </li>
+            <li>
+              <span className="font-semibold text-green-600">Savings Services:</span> Encouraging savings among low-income groups to build financial resilience.
+            </li>
+            <li>
+              <span className="font-semibold text-orange-600">Group Lending Models:</span> Loans are often provided to groups rather than individuals, fostering a sense of responsibility and peer support.
+            </li>
+            <li>
+              <span className="font-semibold text-blue-700">Focus on Financial Inclusion:</span> Helping the unbanked population gain access to essential financial services.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Purpose Section */}
+      <div className="container mx-auto mt-12">
+        <h2 className="text-3xl font-bold text-blue-700 mb-8">
+          Purpose of Microfinance:
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
+          {/* Left-side Text */}
+          <ul className="lg:w-1/2 space-y-4 text-gray-700">
+            <li>
+              <span className="font-semibold text-blue-700">Empowering Individuals and Communities:</span> By providing the necessary resources to start or expand small businesses, microfinance promotes self-sufficiency and entrepreneurship.
+            </li>
+            <li>
+              <span className="font-semibold text-green-600">Reducing Poverty:</span> Microfinance helps individuals and families break the cycle of poverty by generating income and creating sustainable livelihoods.
+            </li>
+            <li>
+              <span className="font-semibold text-orange-600">Promoting Gender Equality:</span> Many microfinance programs target women, empowering them economically and socially.
+            </li>
+            <li>
+              <span className="font-semibold text-blue-700">Encouraging Financial Literacy:</span> Clients often receive training in budgeting, business management, and savings, fostering a culture of financial responsibility.
+            </li>
+          </ul>
+
+          {/* Right-side Image */}
+          <img
+            src={image1}
+            alt="Purpose of Microfinance"
+            className="w-full lg:w-1/2 mt-6 lg:mt-0 rounded-md shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MicrofinanceFeatures;

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import BannerCarousel from '../components/BannerCarousel';
 import PropertyloanImage from '../assets/propertyLoan.jpg';
 import MicroFinanceImage from '../assets/microFinance.jpg';
 import BusinessLoanImage from '../assets/businessLoan.jpg';
@@ -8,7 +9,6 @@ import IconImage from '../assets/smiling-indian-man.jpg';
 import Mission from '../assets/mission.png';
 import Vision from '../assets/vision.png';
 import Values from '../assets/values.png';
-import BannerCarousel from '../components/BannerCarousel';
 
 const HomePage = () => {
 
@@ -21,11 +21,8 @@ const HomePage = () => {
 
   return (
     <>
-    <div>
-
-      <BannerCarousel />
-    </div>
-    <div className="bg-gray-50 text-gray-800">
+    <BannerCarousel />
+    <div className="bg-gray-50 text-gray-800 overflow-x-hidden">
       {/* Hero Section */}
       <section className="bg-blue-500 text-white py-16" data-aos="fade-up">
         <div className="container mx-auto text-center">
@@ -46,6 +43,7 @@ const HomePage = () => {
       <section className="bg-white py-16 px-8" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-blue-600">About Us</h2>
+          <div className="w-16 mb-8 text-center mx-auto border-b-4 border-orange-500 rounded"></div>
           <p className="mt-4 mb-12 text-gray-700 text-lg leading-relaxed">
             At IPDC, we are committed to providing financial solutions tailored to individuals and businesses.
           </p>
@@ -103,7 +101,7 @@ const HomePage = () => {
             <div className="flex flex-col items-center text-center transition-transform duration-200 ease-in-out transform hover:scale-105" data-aos="fade-left">
               <img src={Values} alt="Values Icon" className="w-20 h-20 mb-4 rounded-full shadow-lg" />
               <h3 className="text-xl font-bold text-blue-600 mb-2">Our Values</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-gray-600 text-base text-left leading-relaxed">
                 <span className="font-semibold text-blue-600">Transparency:</span> We ensure clarity and honesty in all our dealings.
                 <br />
                 <span className="font-semibold text-blue-600">Customer-Centric Approach:</span> Our customers are at the heart of everything we do.

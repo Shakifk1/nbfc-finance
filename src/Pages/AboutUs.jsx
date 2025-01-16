@@ -10,8 +10,10 @@ const AboutUs = () => {
         <header className="text-center mb-12">
           {/* Main Heading */}
           <h1 className="text-5xl font-extrabold text-blue-700">
-            About Us
+          Get To Know Us
           </h1>
+          <div className="w-16 mb-8 mt-2 text-center mx-auto border-b-4 border-orange-500 rounded"></div>
+
 
           {/* Subheading */}
           <p className="mt-6 text-xl text-gray-600 font-medium">

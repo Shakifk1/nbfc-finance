@@ -21,7 +21,7 @@ const BannerCarousel = () => {
   ];
 
   return (
-    <section className="relative" >
+    <section className="relative max-w-full overflow-x-hidden" >
       <Carousel
         autoPlay
         infiniteLoop
@@ -36,7 +36,7 @@ const BannerCarousel = () => {
             <img
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              className="h-[500px] md:h-auto max-w-full object-cover"
+              className="h-[500px] md:h-auto w-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center px-8">
               <h2 className="text-2xl md:text-4xl font-bold text-white text-center">
