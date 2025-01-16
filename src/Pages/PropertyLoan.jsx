@@ -1,26 +1,45 @@
 import React from "react";
+import propert from "../assets/property.jpg";
 
 const PropertyLoan = () => {
   return (
     <>
     
-    <div className="container mx-auto px-4 py-12 mt-28">
-      <h1 className="text-4xl font-bold text-blue-600 mb-6">Property Loan</h1>
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Our Property Loan services provide you with the financial assistance needed to purchase, renovate, or build the property of your dreams.
-        With competitive interest rates and flexible repayment plans, we make property ownership achievable.
-      </p>
-      <p className="mt-4 text-gray-600">
-        Whether you’re looking to invest in residential or commercial property, our team is here to support your financial journey.
-      </p>
-      <ul className="mt-6 space-y-2 list-disc list-inside text-gray-700">
-        <li>Loan amounts tailored to your property's value and needs.</li>
-        <li>Low-interest rates for easy repayment.</li>
-        <li>Hassle-free documentation and approval process.</li>
-      </ul>
-    </div>
+  <div className="max-w-4xl mx-auto px-6 py-16 mt-24 bg-white shadow-lg rounded-lg">
+  {/* Heading */}
+  <h1 className="text-4xl font-extrabold text-blue-700 border-b-4 border-blue-500 inline-block pb-2">
+    Property Loan
+  </h1>
 
+  {/* Description */}
+  <div className="textAndImage">
+  <p className="text-lg text-gray-800 mt-6 leading-relaxed">
+    Our <span className="text-blue-600 font-semibold">Property Loan</span> services provide you with the financial assistance needed to 
+    <span className="text-blue-500 font-semibold"> purchase</span>, 
+    <span className="text-blue-500 font-semibold"> renovate</span>, or 
+    <span className="text-blue-500 font-semibold"> build</span> the property of your dreams. With competitive interest rates and flexible repayment plans, we make property ownership achievable.
+  </p>
+  <img src={propert} alt="property" className="w-full rounded-lg shadow-md" />
+  </div>
+  <p className="mt-4 text-gray-700 leading-relaxed">
+    Whether you’re looking to invest in 
+    <span className="text-green-600 font-semibold"> residential</span> or 
+    <span className="text-green-600 font-semibold"> commercial</span> property, our team is here to support your financial journey.
+  </p>
 
+  {/* Features */}
+  <ul className="mt-8 space-y-3 list-disc pl-5 text-gray-700">
+    <li>
+      <span className="font-medium">Loan amounts</span> tailored to your property's value and needs.
+    </li>
+    <li>
+      <span className="font-medium text-blue-600">Low-interest rates</span> for easy repayment.
+    </li>
+    <li>
+      <span className="font-medium text-green-600">Hassle-free documentation</span> and approval process.
+    </li>
+  </ul>
+</div>
 
 {/* some data comes here */}
     <div className="bg-gray-50 text-gray-800 min-h-screen py-10 px-5">

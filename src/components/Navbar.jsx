@@ -6,7 +6,6 @@ import LogoPng from "../assets/logo-dark.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 shadow-md">
@@ -31,9 +30,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Main Navbar Section */}
-      <div className="bg-blue-600 text-white">
+      <div className="bg-blue-600 bg-opacity-50 text-white md:px-16">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -53,41 +51,34 @@ const Navbar = () => {
             <li>
               <Link to="/about" className="hover:text-gray-300">About Us</Link>
             </li>
-            <li className="relative">
-              <button
-                className="hover:text-gray-300 focus:outline-none"
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              >
-                Services
-              </button>
-              {isDropdownOpen && (
-                <ul className="absolute left-0 mt-2 bg-blue-700 text-white shadow-lg rounded-md">
-                  <li>
-                    <Link
-                      to="/services/microfinance"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Microfinance
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/services/property-loan"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Property Loan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/services/business-loan"
-                      className="block px-4 py-2 hover:bg-blue-500"
-                    >
-                      Business Loan
-                    </Link>
-                  </li>
-                </ul>
-              )}
+            <li className="relative group">
+              <span className="hover:text-gray-300 cursor-pointer">Services</span>
+              <ul className="absolute left-0 mt-2 bg-blue-700 bg-opacity-50 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <li>
+                  <Link
+                    to="/services/microfinance"
+                    className="block px-4 py-2 hover:bg-blue-500"
+                  >
+                    Microfinance
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/property-loan"
+                    className="block px-4 py-2 hover:bg-blue-500"
+                  >
+                    Property Loan
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/business-loan"
+                    className="block px-4 py-2 hover:bg-blue-500"
+                  >
+                    Business Loan
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
@@ -119,48 +110,43 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="md:hidden bg-blue-700 text-white">
+        <ul className="md:hidden bg-blue-700 bg-opacity-50 text-white">
           <li>
             <Link to="/" className="block py-2 px-4 hover:bg-blue-500">Home</Link>
           </li>
           <li>
             <Link to="/about" className="block py-2 px-4 hover:bg-blue-500">About Us</Link>
           </li>
-          <li className="relative">
-            <button
-              className="w-full text-left py-2 px-4 hover:bg-blue-500 focus:outline-none"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            >
+          <li className="relative group">
+            <span className="block py-2 px-4 hover:bg-blue-500 cursor-pointer">
               Services
-            </button>
-            {isDropdownOpen && (
-              <ul className="bg-blue-600 text-white">
-                <li>
-                  <Link
-                    to="/services/microfinance"
-                    className="block px-4 py-2 hover:bg-blue-500"
-                  >
-                    Microfinance
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services/property-loan"
-                    className="block px-4 py-2 hover:bg-blue-500"
-                  >
-                    Property Loan
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services/business-loan"
-                    className="block px-4 py-2 hover:bg-blue-500"
-                  >
-                    Business Loan
-                  </Link>
-                </li>
-              </ul>
-            )}
+            </span>
+            <ul className="bg-blue-600 text-white hidden group-hover:block">
+              <li>
+                <Link
+                  to="/services/microfinance"
+                  className="block px-4 py-2 hover:bg-blue-500"
+                >
+                  Microfinance
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/property-loan"
+                  className="block px-4 py-2 hover:bg-blue-500"
+                >
+                  Property Loan
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/business-loan"
+                  className="block px-4 py-2 hover:bg-blue-500"
+                >
+                  Business Loan
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link to="/contact" className="block py-2 px-4 hover:bg-blue-500">
