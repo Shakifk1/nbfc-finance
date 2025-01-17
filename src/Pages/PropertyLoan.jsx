@@ -8,7 +8,7 @@ const PropertyLoan = () => {
   <div className="max-w-4xl mx-auto px-6 py-16 mt-24 bg-white shadow-lg rounded-lg">
   {/* Heading */}
   <h1 className="text-4xl font-extrabold text-blue-700 border-b-4 border-blue-500 inline-block pb-2">
-    Property Loan
+  Turn Your Dream Property Into Reality
   </h1>
 
   {/* Description */}

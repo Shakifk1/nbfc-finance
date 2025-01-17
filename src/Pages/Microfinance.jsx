@@ -9,9 +9,9 @@ const Microfinance = () => {
       <div className="container mx-auto px-4 py-12 mt-28">
         {/* Title */}
         <h1 className="text-5xl font-extrabold text-blue-700 text-center">
-          Microfinance
+          Transforming Lives with Microfinance
         </h1>
-        <div className="w-16 mb-8 text-center mx-auto border-b-4 border-orange-500 rounded"></div>
+        <div className="w-16 mb-8 mt-2 text-center mx-auto border-b-4 border-orange-500 rounded"></div>
 
         {/* Introductory Paragraph */}
         <p className="text-lg text-gray-800 leading-relaxed mb-6 text-center">
@@ -22,42 +22,53 @@ const Microfinance = () => {
         </p>
 
         {/* Subheading: What is Microfinance? */}
-        <h2 className="text-3xl font-bold text-blue-600 mb-4">
-          What is Microfinance?
-        </h2>
-        <p className="text-base text-gray-700 leading-relaxed mb-6">
-          Microfinance refers to the provision of financial services such as small
-          loans (<span className="text-green-700 font-medium">microloans</span>),
-          savings accounts, insurance, and training to individuals or groups who
-          lack access to traditional banking systems. These services are primarily
-          targeted at low-income individuals, small entrepreneurs, and marginalized
-          communities, enabling them to improve their economic situations.
-        </p>
+        <div className="container mx-auto px-6 py-12 mt-12">
+          <div className="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0">
+            {/* What is Microfinance? */}
+            <div className="md:w-6/12">
+              <h2 className="text-3xl font-bold text-blue-600 mb-4">
+                What is Microfinance?
+              </h2>
+              <p className="text-base text-gray-700 leading-relaxed mb-6">
+                Microfinance refers to the provision of financial services such as small
+                loans (<span className="text-green-700 font-medium">microloans</span>),
+                savings accounts, insurance, and training to individuals or groups who
+                lack access to traditional banking systems. These services are primarily
+                targeted at low-income individuals, small entrepreneurs, and marginalized
+                communities, enabling them to improve their economic situations.
+              </p>
+            </div>
+
+            {/* Key Features List */}
+            <div className="md:w-5/12">
+              <h3 className="text-2xl font-bold text-orange-600 mt-8 md:mt-0 mb-4">
+                Why Choose Our Microfinance Services?
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <span className="text-blue-700 font-medium">Small, easy-to-access loans:</span>{" "}
+                  Tailored to meet your specific needs.
+                </li>
+                <li>
+                  <span className="text-blue-700 font-medium">Flexible repayment options:</span>{" "}
+                  Designed to suit your financial capacity.
+                </li>
+                <li>
+                  <span className="text-blue-700 font-medium">Dedicated support:</span>{" "}
+                  Helping you ensure your business success.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
 
         {/* Highlighted Paragraph */}
-        <p className="text-lg text-gray-600 font-medium bg-gray-100 p-4 rounded-lg">
+        <p className="text-lg text-gray-600 font-medium bg-gray-100 p-4 rounded-lg text-center">
           Our Microfinance services help individuals start or grow their businesses,
           achieve financial independence, and improve their quality of life.
         </p>
-
-        {/* Key Features List */}
-        <h3 className="text-2xl font-bold text-orange-600 mt-8 mb-4">
-          Why Choose Our Microfinance Services?
-        </h3>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>
-            <span className="text-blue-700 font-medium">Small, easy-to-access loans:</span>{" "}
-            Tailored to meet your specific needs.
-          </li>
-          <li>
-            <span className="text-blue-700 font-medium">Flexible repayment options:</span>{" "}
-            Designed to suit your financial capacity.
-          </li>
-          <li>
-            <span className="text-blue-700 font-medium">Dedicated support:</span>{" "}
-            Helping you ensure your business success.
-          </li>
-        </ul>
       </div>
 
       {/* pre info end */}

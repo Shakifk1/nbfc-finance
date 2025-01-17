@@ -28,14 +28,14 @@ const HomePage = () => {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold">Empowering Your Financial Future</h1>
           <p className="mt-4 text-lg">Providing Microfinance, Business Loans, and Property Loans to meet your needs.</p>
-          <div className="mt-8 flex justify-center space-x-4">
+          {/* <div className="mt-8 flex justify-center space-x-4">
             <a href="/apply" className="bg-white text-blue-500 py-2 px-6 rounded-md font-semibold hover:bg-gray-100">
               Apply Now
             </a>
             <a href="/services" className="bg-blue-500 py-2 px-6 rounded-md font-semibold hover:bg-blue-400">
               Learn More
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 
