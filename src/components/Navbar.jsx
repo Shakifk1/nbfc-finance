@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Main Navbar Section */}
-      <div className="bg-blue-600 bg-opacity-50 text-white md:px-16">
+      <div className="bg-blue-900 bg-opacity-50 text-white md:px-16">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <span className="hover:text-gray-300 cursor-pointer">Services</span>
-              <ul className="absolute left-0 mt-2 bg-blue-700 bg-opacity-50 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <ul className="absolute left-0 mt-2 bg-blue-700 bg-opacity-50 text-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden">  {/* if something breaks remove overflow hiiden*/}
                 <li>
                   <Link
                     to="/services/microfinance"
@@ -110,7 +110,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="md:hidden bg-blue-700 bg-opacity-50 text-white">
+        <ul className="md:hidden bg-blue-900 bg-opacity-50 text-white">
           <li>
             <Link to="/" className="block py-2 px-4 hover:bg-blue-500">Home</Link>
           </li>

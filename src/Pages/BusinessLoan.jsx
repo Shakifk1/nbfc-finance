@@ -13,13 +13,13 @@ const BusinessLoan = () => {
       <section className="bg-gray-50 text-gray-700 px-6 py-12 mt-28">
         {/* Hero Section */}
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl font-extrabold text-blue-700 mb-4">
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-4 border-b-4 border-orange-600 pb-2">
             Empower Your Business Growth with Flexible Loan Solutions
           </h2>
           <p className="text-lg text-gray-800 leading-relaxed">
             Expand your business with our tailor-made Business Loan solutions. We provide the financial resources you need to grow your operations, purchase inventory, or invest in infrastructure.
           </p>
-          <p className="text-lg text-blue-600 mt-4">
+          <p className="text-lg font-semibold  mt-4">
             Tailored Business Loans to Fuel Your Ambitions
           </p>
           <p className="mt-2 text-gray-700">
@@ -33,9 +33,9 @@ const BusinessLoan = () => {
         </div>
         {/* What is a Business Loan */}
         <div className="mt-12 max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
-          <h3 className="text-2xl font-bold text-blue-700 mb-4">What is a Business Loan?</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">What is a Business Loan?</h3>
           <p className="leading-relaxed">
-            A <span className="text-blue-600 font-semibold">business loan</span> is a financial product designed to help entrepreneurs and businesses fund their operations, expansion, or other needs. These loans can be tailored for startups, small businesses, or large enterprises.
+            A <span className="font-semibold">business loan</span> is a financial product designed to help entrepreneurs and businesses fund their operations, expansion, or other needs. These loans can be tailored for startups, small businesses, or large enterprises.
           </p>
         </div>
         <div>
@@ -43,25 +43,25 @@ const BusinessLoan = () => {
 
         {/* Types of Business Loans */}
         <div className="mt-12 max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
-          <h3 className="text-2xl font-bold text-blue-700 mb-4">Types of Business Loans</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">Types of Business Loans</h3>
           <ul className="space-y-3">
             <li>
-              <span className="font-semibold text-blue-600">Term Loans:</span> Long-term and short-term financing for major business expenses.
+              <span className="font-semibold">Term Loans:</span> Long-term and short-term financing for major business expenses.
             </li>
             <li>
-              <span className="font-semibold text-green-600">Working Capital Loans:</span> For day-to-day operational expenses like payroll, rent, or utilities.
+              <span className="font-semibold">Working Capital Loans:</span> For day-to-day operational expenses like payroll, rent, or utilities.
             </li>
             <li>
-              <span className="font-semibold text-blue-600">Equipment Financing:</span> Loans to purchase or lease machinery and equipment.
+              <span className="font-semibold">Equipment Financing:</span> Loans to purchase or lease machinery and equipment.
             </li>
             <li>
-              <span className="font-semibold text-green-600">Invoice Financing:</span> Get advances against unpaid invoices to maintain cash flow.
+              <span className="font-semibold">Invoice Financing:</span> Get advances against unpaid invoices to maintain cash flow.
             </li>
             <li>
-              <span className="font-semibold text-blue-600">Startup Loans:</span> Specifically designed for new entrepreneurs starting their businesses.
+              <span className="font-semibold">Startup Loans:</span> Specifically designed for new entrepreneurs starting their businesses.
             </li>
             <li>
-              <span className="font-semibold text-green-600">Business Expansion Loans:</span> Funding to scale operations, open new branches, or invest in marketing.
+              <span className="font-semibold">Business Expansion Loans:</span> Funding to scale operations, open new branches, or invest in marketing.
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@ const BusinessLoan = () => {
           {/* Benefits of Business Loans */}
           <div className="mt-12 flex flex-col md:flex-row items-center gap-6">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-5/12">
-              <h3 className="text-2xl font-bold text-blue-700 mb-4">Benefits of a Business Loan</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Benefits of a Business Loan</h3>
               <ul className="space-y-3">
                 <li>Flexible repayment options tailored to cash flow.</li>
                 <li>Competitive interest rates.</li>
@@ -89,7 +89,7 @@ const BusinessLoan = () => {
           {/* Eligibility Criteria */}
           <div className="mt-12 flex flex-col md:flex-row-reverse items-center gap-6">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-5/12">
-              <h3 className="text-2xl font-bold text-blue-700 mb-4">Eligibility Criteria</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Eligibility Criteria</h3>
               <ul className="space-y-3">
                 <li>Minimum business turnover.</li>
                 <li>Years of business operation.</li>
@@ -107,7 +107,7 @@ const BusinessLoan = () => {
           {/* Loan Process */}
           <div className="mt-12 flex flex-col md:flex-row items-center gap-6">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-5/12">
-              <h3 className="text-2xl font-bold text-blue-700 mb-4">Loan Process</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Loan Process</h3>
               <ul className="space-y-3">
                 <li>Apply Online: Submit your application and documents.</li>
                 <li>Get Pre-Approved: Receive initial approval within a day.</li>
@@ -125,7 +125,7 @@ const BusinessLoan = () => {
           {/* Common Use Cases */}
           <div className="mt-12 flex flex-col md:flex-row-reverse items-center gap-6">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-5/12">
-              <h3 className="text-2xl font-bold text-blue-700 mb-4">Common Use Cases</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Use Cases</h3>
               <ul className="space-y-3">
                 <li>Purchasing raw materials or inventory.</li>
                 <li>Hiring new staff or training employees.</li>
@@ -146,7 +146,7 @@ const BusinessLoan = () => {
       {/* why choose us */}
       <div className="container mx-auto px-6 py-8 mt-8 bg-gray-50 rounded-lg shadow-lg">
         {/* Section Heading */}
-        <h2 className="text-4xl font-extrabold text-blue-700 mb-6 text-center">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-6 text-center">
           Why Choose Us?
         </h2>
 
@@ -157,7 +157,7 @@ const BusinessLoan = () => {
 
         {/* Features List */}
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
+          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-600">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Competitive Rates and Terms
             </h3>
@@ -165,7 +165,7 @@ const BusinessLoan = () => {
               Enjoy industry-leading interest rates and flexible repayment options tailored to your business.
             </p>
           </li>
-          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
+          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-600">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Quick and Hassle-Free Process
             </h3>
@@ -173,7 +173,7 @@ const BusinessLoan = () => {
               Get your loan approved quickly with minimal paperwork and simple procedures.
             </p>
           </li>
-          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
+          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-600">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Transparent Policies
             </h3>
@@ -181,7 +181,7 @@ const BusinessLoan = () => {
               No hidden charges or fine print—experience full transparency in all our offerings.
             </p>
           </li>
-          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
+          <li className="bg-white shadow-md rounded-lg p-6 border-l-4 border-orange-600">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Tailored Loan Solutions
             </h3>

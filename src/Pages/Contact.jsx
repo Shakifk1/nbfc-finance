@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <div className="container mx-auto px-4 py-12 mt-28">
-      <h1 className="text-4xl font-bold text-blue-600 mb-6">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">Contact Us</h1>
       <p className="text-lg text-gray-700 leading-relaxed mb-6">
         Have any questions or need assistance? Feel free to reach out to us. We’d love to hear from you!
       </p>

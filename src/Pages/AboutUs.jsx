@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import microtrend from '../assets/micro-trend.jpg'
 
 const AboutUs = () => {
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration (ms)
+        once: true, // Only animate on first scroll
+      });
+    }, []);
+
   return (
     <div className="mt-28 bg-gray-100 text-gray-800 min-h-screen">
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Header Section */}
-        <header className="text-center mb-12">
+        <header className="text-center mb-12" data-aos="fade-up">
           {/* Main Heading */}
-          <h1 className="text-5xl font-extrabold text-blue-700">
+          <h1 className="text-5xl font-extrabold text-gray-800 border-b-4 border-orange-600 inline-block pb-2">
           Get To Know Us
           </h1>
-          <div className="w-16 mb-8 mt-2 text-center mx-auto border-b-4 border-orange-500 rounded"></div>
 
 
           {/* Subheading */}
@@ -30,7 +39,7 @@ const AboutUs = () => {
         <section className="bg-gray-100 p-8">
           <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start">
             {/* Left side image */}
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0 flex justify-center lg:justify-start">
+            <div className="lg:w-1/2 w-full mb-6 lg:mb-0 flex justify-center lg:justify-start" data-aos="fade-right">
               <img
                 src={microtrend}
                 alt="micro-trend"
@@ -39,13 +48,13 @@ const AboutUs = () => {
             </div>
 
             {/* Right side text */}
-            <div className="lg:w-1/2 w-full lg:pl-8">
-              <h2 className="text-3xl lg:text-4xl font-bold text-blue-800 mb-4">
+            <div className="lg:w-1/2 w-full lg:pl-8" data-aos="fade-left">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
                 Trend MicroFinance
               </h2>
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
                 Non-banking financial firms (NBFCs) saw a{' '}
-                <span className="text-blue-800 font-semibold">
+                <span className=" font-semibold">
                   15% compound annual growth rate (CAGR)
                 </span>{' '}
                 in credit during the fiscal years 2016 and 2018, mostly as a result
@@ -54,10 +63,10 @@ const AboutUs = () => {
               </p>
               <p className="text-lg leading-relaxed text-gray-600 mb-4">
                 However, a liquidity crisis and the{' '}
-                <span className="text-red-500 font-semibold">September 2018 IL&FS failure</span>{' '}
+                <span className="text-gray-800 font-semibold">September 2018 IL&FS failure</span>{' '}
                 presented challenges for non-banks. Growth was then slowed by
                 further pressures brought on by the{' '}
-                <span className="text-blue-800 font-semibold">Covid-19 outbreak</span> and
+                <span className=" font-semibold">Covid-19 outbreak</span> and
                 budgetary issues.
               </p>
               <p className="text-lg leading-relaxed text-gray-500">
@@ -74,27 +83,27 @@ const AboutUs = () => {
         <section className="bg-gray-50 p-8">
           <div className="container mx-auto space-y-6">
             {/* Paragraph 1 - Primary text color (50% emphasis) */}
-            <p className="text-lg leading-relaxed text-blue-800 font-semibold">
+            <p className="text-lg leading-relaxed  font-semibold" data-aos="fade-up">
               Following the second wave of the pandemic, lockdowns were loosened, and the economy started to recover in fiscal 2022. This resulted in the restoration of company operations, which in turn drove credit growth across the board.
             </p>
 
             {/* Paragraph 2 - Secondary text color (30% emphasis) */}
-            <p className="text-lg leading-relaxed text-gray-700">
-              With growth of <span className="text-blue-800 font-semibold">16.2%</span> in the most recent fiscal year, NBFCs were back on pace after the pandemic dampened lending growth. As a result, the total amount of credit that NBFCs (including HFCs, PFC, and REC but not HDFC) owed was Rs <span className="text-blue-800 font-semibold">34.8 trillion</span>. In the medium run, <span className="text-red-500 font-semibold">CRISIL MI&A Research</span> projects credit growth of <span className="text-blue-800">14–16%</span>. Micro, small, and medium enterprise (MSME) loans in the wholesale segment and retail home loans, personal loans, vehicle loans, and microfinance in the retail segment are the main growth drivers. Since NBFCs are growing their lending faster than banks, their market share is predicted to rise by about 200 basis points to <span className="text-blue-800">25%</span> by fiscal 2026.
+            <p className="text-lg leading-relaxed text-gray-700" data-aos="fade-up">
+              With growth of <span className=" font-semibold">16.2%</span> in the most recent fiscal year, NBFCs were back on pace after the pandemic dampened lending growth. As a result, the total amount of credit that NBFCs (including HFCs, PFC, and REC but not HDFC) owed was Rs <span className=" font-semibold">34.8 trillion</span>. In the medium run, <span className="text-gray-800 font-semibold">CRISIL MI&A Research</span> projects credit growth of <span className="">14–16%</span>. Micro, small, and medium enterprise (MSME) loans in the wholesale segment and retail home loans, personal loans, vehicle loans, and microfinance in the retail segment are the main growth drivers. Since NBFCs are growing their lending faster than banks, their market share is predicted to rise by about 200 basis points to <span className="">25%</span> by fiscal 2026.
             </p>
 
             {/* Paragraph 3 - Secondary text color (30% emphasis) */}
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg leading-relaxed text-gray-700" data-aos="fade-up">
               With an emphasis on expanding the retail portfolio, NBFCs are anticipated to continue to outpace the growth of banking credit. Microfinance, retail home, auto, and gold loans are important retail areas that contribute to the entire NBFCs with double-digit credit growth between fiscal 2024 and 2026.
             </p>
 
             {/* Paragraph 4 - Primary and secondary colors combined */}
-            <p className="text-lg leading-relaxed text-blue-800 font-medium">
-              Non-banking financial firms (NBFCs) in India saw a <span className="text-red-500 font-semibold">15% compound annual growth rate (CAGR)</span> in credit growth between 2016 and 2018, primarily as a result of expansion and new competitors. However, the Covid-19 epidemic, liquidity crisis, and the <span className="text-red-500 font-semibold">2018 IL&FS default</span> had an effect on growth. Banks used excess liquidity to increase their market share in important industries. The epidemic decreased credit demand and stopped economic activity in fiscal 2021. The restoration of business operations in fiscal 2022 resulted in an increase in credit across the majority of segments. With a <span className="text-blue-800 font-semibold">16.2% increase</span> in fiscal 2022, NBFCs resumed their growth trajectory, reaching around Rs 34.8 trillion.
+            <p className="text-lg leading-relaxed  font-medium" data-aos="fade-up">
+              Non-banking financial firms (NBFCs) in India saw a <span className="text-gray-800 font-semibold">15% compound annual growth rate (CAGR)</span> in credit growth between 2016 and 2018, primarily as a result of expansion and new competitors. However, the Covid-19 epidemic, liquidity crisis, and the <span className="text-gray-800 font-semibold">2018 IL&FS default</span> had an effect on growth. Banks used excess liquidity to increase their market share in important industries. The epidemic decreased credit demand and stopped economic activity in fiscal 2021. The restoration of business operations in fiscal 2022 resulted in an increase in credit across the majority of segments. With a <span className=" font-semibold">16.2% increase</span> in fiscal 2022, NBFCs resumed their growth trajectory, reaching around Rs 34.8 trillion.
             </p>
 
             {/* Paragraph 5 - Tertiary color (10% emphasis) */}
-            <p className="text-lg leading-relaxed text-gray-500">
+            <p className="text-lg leading-relaxed text-gray-500" data-aos="fade-up">
               The government has relaxed controls on foreign trade and investment. Higher limits on foreign direct investment were permitted in a few key sectors, such as telecommunications. However, tariff spikes in sensitive categories, like agriculture, and incremental progress on economic reforms still hinder foreign access to India’s vast and growing market.
             </p>
           </div>
@@ -103,29 +112,29 @@ const AboutUs = () => {
 
 
         {/* Company History */}
-        <section className="mb-12 p-8">
-          <h2 className="text-3xl lg:text-4xl font-bold text-blue-700 mb-4">
+        <section className="mb-12 p-8" data-aos="fade-right">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
             Our History
           </h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            Founded in <span className="text-blue-800 font-semibold">2010</span >, our organization began with a vision to bridge
+            Founded in <span className=" font-semibold">2010</span >, our organization began with a vision to bridge
             the gap between financial institutions and underserved communities. Over the
-            years, we have helped <span className="text-blue-800 font-semibold">thousands of clients</span> secure loans and realize their dreams.
-            With a <span className="text-red-500 font-semibold">customer-first approach</span>, we are proud to be a trusted financial partner.
+            years, we have helped <span className=" font-semibold">thousands of clients</span> secure loans and realize their dreams.
+            With a <span className="text-gray-800 font-semibold">customer-first approach</span>, we are proud to be a trusted financial partner.
           </p>
         </section>
 
         {/* Team Introductions */}
         <section className="mb-12">
           {/* Section Title */}
-          <h2 className="text-3xl font-bold text-blue-600 mb-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-down">
             Meet Our Team
           </h2>
 
           {/* Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300" data-aos="fade-right">
               <img
                 src="https://via.placeholder.com/150"
                 alt="Team Member 1"
@@ -136,7 +145,7 @@ const AboutUs = () => {
             </div>
 
             {/* Team Member 2 */}
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
               <img
                 src="https://via.placeholder.com/150"
                 alt="Team Member 2"
@@ -147,7 +156,7 @@ const AboutUs = () => {
             </div>
 
             {/* Team Member 3 */}
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow duration-300" data-aos="fade-left">
               <img
                 src="https://via.placeholder.com/150"
                 alt="Team Member 3"
@@ -160,28 +169,28 @@ const AboutUs = () => {
         </section>
 
         {/* Why Trust Us */}
-        <section className="mt-12">
+        <section className="mt-12" data-aos="fade-up">
           {/* Section Heading */}
-          <h2 className="text-3xl font-bold text-blue-600 mb-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Why Trust Us
           </h2>
 
           {/* List of Reasons */}
           <ul className="space-y-4 text-gray-700 text-lg">
             <li className="flex items-start">
-              <span className="text-blue-500 font-semibold mr-2">•</span>
+              <span className=" font-semibold mr-2">•</span>
               <span>Certified and licensed financial institution.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 font-semibold mr-2">•</span>
+              <span className=" font-semibold mr-2">•</span>
               <span>Over 10 years of experience in the financial sector.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 font-semibold mr-2">•</span>
+              <span className=" font-semibold mr-2">•</span>
               <span>Thousands of satisfied clients and successful projects funded.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 font-semibold mr-2">•</span>
+              <span className=" font-semibold mr-2">•</span>
               <span>Transparent and customer-centric approach.</span>
             </li>
           </ul>
