@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import microp1 from "../assets/microp1.jpg";
@@ -42,7 +42,7 @@ const Microfinance = () => {
               </h2>
               <p className="text-base text-gray-700 leading-relaxed mb-6">
                 Microfinance refers to the provision of financial services such as small
-                loans (<span className="text-green-700 font-medium">microloans</span>),
+                loans (<span className="text-gray-800 font-medium">microloans</span>),
                 savings accounts, insurance, and training to individuals or groups who
                 lack access to traditional banking systems. These services are primarily
                 targeted at low-income individuals, small entrepreneurs, and marginalized
